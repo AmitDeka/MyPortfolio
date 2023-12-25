@@ -1,0 +1,11 @@
+---
+interface Props {
+  style: string;
+  title: string;
+  iconClass: string;
+}
+
+const { style, title, iconClass } = Astro.props;
+---
+
+<button class={style}>{title} <i class={iconClass}></i></button>
